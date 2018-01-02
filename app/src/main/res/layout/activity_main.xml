@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="taxt.pbb.uts.tgs_ppb.MainActivity">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_marginTop="50px"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar"
+        android:text="Username"
+        android:fontFamily="verdana"
+        android:layout_marginBottom="20px"/>
+
+    <EditText
+        android:id="@+id/text_user"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:inputType="text"
+        android:hint="Masukan Username"
+        android:layout_below="@+id/user"/>
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="30px"
+        android:layout_below="@+id/text_user"/>
+
+    <EditText
+        android:id="@+id/text_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:hint="Masukan Password"
+        android:inputType="text"
+        android:layout_below="@+id/pass"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_pass"
+        android:hint="LOGIN"/>
+
+</RelativeLayout>
